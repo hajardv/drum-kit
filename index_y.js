@@ -5,10 +5,17 @@ function hideAllImages() {
     });
   }
 
-document.addEventListener("keypress", (key)=>{listener(key.key)});
+document.addEventListener("keypress", (key)=>{func(key.key)});
 
-function listener(key_p){
-    switch (key_p){
+function func_img(id_img){
+    hideAllImages()
+    const img = document.getElementById(id_img);
+    img.style.display = "block";
+}
+
+function func(sounds){
+    hideAllImages();
+    switch (sounds){
         case "w":
             new Audio("./sounds/kick-bass.mp3").play();
             func_img('tom0');
@@ -39,19 +46,4 @@ function listener(key_p){
             break;
         default: console.log(key);
     }
-}
-
-function func_img(id_img){
-    hideAllImages();
-    const image = document.getElementById(id_img);
-    image.style.display="block"
-}
-
-function func(id_img, sounds){
-    hideAllImages();
-    const image = document.getElementById(id_img);
-    image.style.display="block"
-    
-    const sound = document.getElementById(sounds);
-    sound.play()
 }
