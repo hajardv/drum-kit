@@ -10,31 +10,31 @@ document.addEventListener("keypress", (key)=>{listener(key.key)});
 function listener(key_p){
     switch (key_p){
         case "w":
-            document.getElementById('sound0').play();
+            new Audio("./sounds/kick-bass.mp3").play();
             func_img('tom0');
             break;
         case "a":
-            new Audio("./sounds/kick-bass.mp3").play();
+            new Audio("./sounds/tom-1.mp3").play();
             func_img('tom1');
             break;
         case "s":
-            document.getElementById('sound2').play();
+            new Audio("./sounds/tom-2.mp3").play();
             func_img('tom2');
             break;
         case "d":
-            document.getElementById('sound3').play();
+            new Audio("./sounds/tom-3.mp3").play();
             func_img('tom3');
             break;
         case "j":
-            document.getElementById('sound4').play();
+            new Audio("./sounds/tom-4.mp3").play();
             func_img('tom4');
             break;
         case "k":
-            document.getElementById('sound5').play();
+            new Audio("./sounds/snare.mp3").play();
             func_img('tom5');
             break;
         case "l":
-            document.getElementById('sound6').play();
+            new Audio("./sounds/kick-bass.mp3").play();
             func_img('tom6');
             break;
         default: console.log(key);
