@@ -15,6 +15,7 @@ function func(){
     image.style.display="block"
     
     const sound = document.getElementById('sound');
+    sound.play()
     image.currentTime = 1
     }
     function crash(){
