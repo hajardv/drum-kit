@@ -16,7 +16,7 @@ footer {
   font-family: sans-serif;
 }
 
-.w {
+#w {
 
 }
 
@@ -78,4 +78,18 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+img{
+  display: none;
+  position: relative;
+  bottom: 150px;
+  left: 500px;
+
+    transition: opacity 0.5s ease-in-out;
+  
+ 
+
+}
+audio{
+  display: none;
 }
