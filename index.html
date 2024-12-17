@@ -12,13 +12,43 @@
 
   <h1 id="title">Drum 🥁 Kit</h1>
   <div class="set">
-    <button class="w drum">w</button>
-    <button class="a drum">a</button>
-    <button class="s drum">s</button>
-    <button class="d drum">d</button>
-    <button class="j drum">j</button>
-    <button class="k drum">k</button>
-    <button class="l drum">l</button>
+    <button onclick="func()" class="w drum"  >w</button>
+    <button  onclick="crash()" class="a drum"  >a</button>
+    <button onclick="tom1()" class="s drum" >s</button>
+    <button onclick="tom2()" class="d drum">d</button>
+    <button onclick="tom3()" class="j drum">j</button>
+    <button onclick="tom4()" class="k drum">k</button>
+    <button  onclick="tom5()"    class="l drum">l</button>
+  </div>
+  <div>
+    <img  id="im" src="kick.png" alt="">
+    <img  id="tom1"  src="tom1.png" alt="">
+    <img  id="tom2"  src="tom2.png" alt="">
+    <img  id="tom3"  src="tom3.png" alt="">
+    <img  id="tom4"  src="tom4.png" alt="">
+    <img  id="tom5"  src="snare.png" alt="">
+    <img  id="tom6"  src="crash.mp3" alt="">
+
+
+    
+
+
+    <audio id="sound" src="kick-bass.mp3"></audio>
+    <audio id="sound1" src="tom-1.mp3"></audio>
+    <audio id="sound2" src="tom-2.mp3"></audio>
+    <audio id="sound3" src="tom-3.mp3"></audio>
+    <audio id="sound6" src="crash.mp3"></audio>
+    <audio id="sound5" src="snare.mp3"></audio>
+
+
+
+    <audio id="sound4" src="tom-4.mp3"></audio>
+
+
+
+    
+
+
   </div>
 
 
