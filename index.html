@@ -12,16 +12,16 @@
 
   <h1 id="title">Drum 🥁 Kit</h1>
   <div class="set">
-    <button onclick="func()" class="w drum"  >w</button>
-    <button  onclick="crash()" class="a drum"  >a</button>
-    <button onclick="tom1()" class="s drum" >s</button>
-    <button onclick="tom2()" class="d drum">d</button>
-    <button onclick="tom3()" class="j drum">j</button>
-    <button onclick="tom4()" class="k drum">k</button>
-    <button  onclick="tom5()"    class="l drum">l</button>
+    <button onclick="func('tom0', 'sound0')" class=" drum"  >w</button>
+    <button  onclick="func('tom1', 'sound1')" class=" drum"  >a</button>
+    <button onclick="func('tom2', 'sound2')" class="drum" >s</button>
+    <button onclick="func('tom3', 'sound3')" class=" drum">d</button>
+    <button onclick="func('tom4', 'sound4')" class=" drum">j</button>
+    <button onclick="func('tom5', 'sound5')" class=" drum">k</button>
+    <button  onclick="func('tom6', 'sound6')" class=" drum">l</button>
   </div>
   <div>
-    <img  id="im" src="./images/kick.png" alt="">
+    <img  id="tom0" src="./images/kick.png" alt="">
     <img  id="tom1"  src="./images/tom1.png" alt="">
     <img  id="tom2"  src="./images/tom2.png" alt="">
     <img  id="tom3"  src="./images/tom3.png" alt="">
@@ -29,11 +29,7 @@
     <img  id="tom5"  src="./images/snare.png" alt="">
     <img  id="tom6"  src="./images/crash.png" alt="">
 
-
-    
-
-
-    <audio id="sound" src="./sounds/kick-bass.mp3"></audio>
+    <audio id="sound0" src="./sounds/kick-bass.mp3"></audio>
     <audio id="sound1" src="./sounds/tom-1.mp3"></audio>
     <audio id="sound2" src="./sounds/tom-2.mp3"></audio>
     <audio id="sound3" src="./sounds/tom-3.mp3"></audio>
@@ -41,18 +37,13 @@
     <audio id="sound5" src="./sounds/snare.mp3"></audio>
     <audio id="sound4" src="./sounds/kick-bass.mp3"></audio>
 
-
-
-    
-
-
   </div>
 
 
   <footer>
     Made with ❤️ in Marrakech.
   </footer>
-  <script src="./index.js"></script>
+  <script src="./index_y.js"></script>
 </body>
 
 </html>
